@@ -1,0 +1,5 @@
+<%= form_tag(session_create_path, method: :post)  %>
+  username: <%= text_field_tag :name %><br>
+  password: <%= password_field_tag :password %><br>
+  confirm password: <%= password_field_tag :password_confirmation %><br>
+  <%= submit_tag "Log in" %>
